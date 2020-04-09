@@ -3,27 +3,39 @@
 <head>
 <meta charset=utf-8 />
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Special+Elite&display=swap" rel="stylesheet">
 <title>Calculator</title>
 </head>
 <body>
 
-  <h1>Welcome to the Hater Calculator</h1>
+  <h1>W3LC0M3 T0 TH3 H4T3R C4LCUL4T0R!</h1>
 
-  <label>Half this number...
-    <input type="number" id="half" placeholder="Number">
-  </label>
-  <button id="half-button">Calculate</button>
-  <br><br>
-
-  <label>Give me your name and I'll give you a fortune...
-    <input id="fortune-input" placeholder="Name">
-  </label>
-  <button id="fortune-button">Get Fortune</button>
-  <br><br>
-  <div id="fortune-output">
-    <p id = "fortune-output-p"></p>
+<div class="inputs">
+  <div class="half">
+    <label>Half this number...
+      <input type="number" id="half" placeholder="Number">
+    </label>
+    <button id="half-button">Calculate</button>
+    <br><br>
   </div>
-  <script src="script.js" charset="utf-8"></script>
+  <div class="fortune">
+    <label>Give me your name and I'll give you a fortune...
+      <input id="fortune-input" placeholder="Name">
+    </label>
+    <div class="fortune-button-div">
+      <button id="fortune-button">Get Fortune</button>
+      <br><br>
+    </div>
+    <!-- <div class="fortune-cookie">
+      <img src="cookie-1.png" >
+    </div> -->
+    <div id="fortune-output">
+      <p id = "fortune-output-p"></p>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </div>
+</div>
 
 </body>
 </html>

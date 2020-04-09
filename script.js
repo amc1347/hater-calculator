@@ -4,14 +4,14 @@ var executeButton = document.getElementById("half-button");
 executeButton.addEventListener("click", halfNumber);
 
 function halfNumber() {
-  half_result = document.getElementById("half").value / 2;
-  result = "Half of " + document.getElementById("half").value + " is " + half_result;
+  var half_result = document.getElementById("half").value / 2;
+  var result = "Half of " + document.getElementById("half").value + " is " + half_result;
   alert(result);
 }
 
 
 
-var name = document.getElementById("fortune-input").value;
+
 var executeB = document.getElementById("fortune-button");
 var fortuneOutput = document.getElementById("fortune-output-p");
 
@@ -44,16 +44,17 @@ executeB.addEventListener("click", fortune);
 fortuneOutput.addEventListener("mouseover", restyle)
 
 function fortune() {
+  var name = document.getElementById("fortune-input").value;
   random_index = Math.floor(Math.random() * secondArray.length);
   fortune_result = secondArray[random_index];
-  fortuneOutput.innerHTML = "Your new fortune is: " + fortune_result
+  fortuneOutput.innerHTML = name + ", your new fortune is: " + fortune_result
 }
 
 function restyle() {
   var randomRed = Math.random() * 255
   var randomGreen = Math.random() * 255
   var randomBlue =  Math.random() * 255
-  var randomTransform = Math.random() * 35
+  var randomTransform = Math.random() * 10
   var randomFontSize = Math.random() * 50
 
   fortuneOutput.style.transform = "rotate(" + randomTransform + "deg)";
